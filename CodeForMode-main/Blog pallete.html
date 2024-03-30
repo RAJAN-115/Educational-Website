@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Space</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="row">
+            <div class="col">
+                <div class="first box">
+                    <input type="number" id="Font-size" min="1" max="100" value="16" onchange="f1(this)">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="f2(this)">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+
+                    <button type="button" onclick="f3(this)">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+
+                    <button type="button" onclick="f4(this)">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" onclick="f5(this)">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+
+                    <button type="button" onclick="f6(this)">
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+
+                    <button type="button" onclick="f7(this)">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                </div>
+                <div class="fourth box">
+                    <button type="button" onclick="f8(this)">
+                        aA
+                    </button>
+
+                    <button type="button" onclick="f9(this)">
+                        <i class="fa-solid fa-text-slash"></i>
+                    </button>
+
+                    <input type="color" onchange="f10(this)">
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <textarea id="textarea" placeholder="Your Text Here"></textarea>
+            </div>
+        </div>
+        <input type="email" placeholder="Email Id" id="email">
+        <button type="button" id="btn">Submit</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function (e) {
+        e.preventDefault()
+        var textarea = document.getElementById('textarea').value;
+        var body = 'textarea: ' +textarea + '<br/> email: ' 
+
+
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "21bcs010ankush@gmail.com",
+            Password: "eqocvhhlixqbvprd",
+            To: '21bcs010ankush@gmail.com',
+            From: email,
+            Subject: "Blog ",
+            Body: body
+        }).then(
+            message => alert(message)
+        );
+    })
+</script>
+
+</html>

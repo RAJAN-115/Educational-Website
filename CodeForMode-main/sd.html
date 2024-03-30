@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <style>
+    .content {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+    <style>
+      /* CSS for dark mode */
+      body.dark-mode {
+        background-color: #000000;
+        color: #edda34;
+      }
+      
+      /* CSS for light mode */
+      body.light-mode {
+        background-color: #f5f5f5;
+        color: #1f0a0a;
+      }
+      
+      /* Styles for the switch */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+      
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+    </style>
+  <body style="background-color: azure;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">CODE FOR MODE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="dsa.html">DSA SHEETS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sd.html">TOP SDE SHEETS</a>
+            </li>
+            <body class="light-mode">
+              <label class="switch">
+                <input type="checkbox" id="modeSwitch" onclick="toggleMode()">
+                <span class="slider"></span>
+              </label>
+              <script>
+                // JavaScript to toggle between dark and light mode
+                function toggleMode() {
+                  var body = document.getElementsByTagName('body')[0];
+                  body.classList.toggle('dark-mode');
+                  body.classList.toggle('light-mode');
+                }
+              </script>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <table class="table table-bordered border-primary">
+      <tr>
+        <td></td>
+        <td contenteditable="true">STRIVER SDE SHEET</td>
+        <td><a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/">STRIVER SDE SHEET</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td contenteditable="true">LOVE BABBAR DSA SHEET</td>
+        <td><a href="https://450dsa.com/">LOVE BABBAR DSA SHEET</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>GFG DSA SHEET</td>
+        <td><a href="https://www.geeksforgeeks.org/sde-sheet-a-complete-guide-for-sde-preparation/">GFG DSA SHEET</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>CREATE YOUR OWN  DSA SHEET</td>
+        <td><a href="create_own_list.html">CREATE YOUR OWN  DSA SHEET</a></td>
+      </tr>
+    </table>
+    <script>
+      function toggleContent(id) {
+        var content = document.getElementById(id);   
+        content.classList.toggle("active");
+      }
+    </script>
+    <h4 style="justify-content: center; background-color: coral;color: black;align-items: center; text-align: center;">QUESTIONS RELATED TO SDE SHEET </h4>
+<h4 onclick="toggleContent('content1')"><b>Which DSA Sheet Is More Important Related To Placement Scenario?</b></h4><hr>
+<div id="content1" class="content">
+  <p style="color: blue;font-size: medium;font-family: Arial, Helvetica, sans-serif;"><b> In the context of placement scenarios, it is common for candidates to refer to DSA (Data Structures and Algorithms) cheat sheets to refresh their knowledge and prepare for technical interviews. While there isn't a definitive answer as to which specific DSA cheat sheet is more important, I can provide you with an overview of some key topics that are typically considered important in placement scenarios.
+<br>
+    1. Big O notation: Understanding time and space complexity is crucial for analyzing algorithm efficiency and performance.
+ <br>   
+    2. Sorting algorithms: Familiarity with various sorting algorithms like Bubble Sort, Insertion Sort, Merge Sort, Quick Sort, etc., is important as they are frequently asked about in interviews.
+ <br>   
+    3. Data structures: Concepts related to fundamental data structures like arrays, linked lists, stacks, queues, trees, graphs, and hash tables are essential. It's important to know their properties, operations, and when to use them effectively.
+   <br> 
+    4. Searching algorithms: Knowledge of popular searching algorithms like Linear Search, Binary Search, and various tree-based search algorithms is valuable.
+  <br>  
+    5. Dynamic programming: Understanding the concept of dynamic programming and being able to identify and solve problems using this technique is beneficial.
+    <br>
+    6. Graph algorithms: Having knowledge of graph traversal algorithms like Depth-First Search (DFS) and Breadth-First Search (BFS), as well as algorithms like Dijkstra's shortest path algorithm and Kruskal's minimum spanning tree algorithm, is valuable.
+    <br>
+    7. Recursion and backtracking: Understanding recursion and being able to solve problems using recursion and backtracking techniques is often tested in interviews.
+   <br> 
+    Remember that while a cheat sheet can be helpful for quick reference, it's important to have a deep understanding of these topics and practice solving problems using them. Additionally, problem-solving skills, critical thinking, and the ability to apply these concepts to real-world scenarios are equally important in the placement process.</b></p>
+</div>
+<h4 onclick="toggleContent('content2')"><b> How Much Questions I Have To Do For Cracking a SDE Role ?</b></h4><hr>
+<div id="content2" class="content">
+  <p style="color: blue;font-size: medium;font-family: Arial, Helvetica, sans-serif;"> <b>The number of questions required to crack a Software Development Engineer (SDE) role can vary widely depending on several factors, including the company, the interview process, and your own proficiency in technical skills. It's important to focus on quality rather than just quantity when preparing for SDE interviews.
+<br>
+    Rather than aiming for a specific number of questions, I would suggest focusing on the following:
+<br>    
+    1. Deep understanding of core concepts: Develop a strong understanding of data structures, algorithms, system design, and other fundamental concepts relevant to the SDE role. Ensure you can apply these concepts to solve problems efficiently.
+ <br>   
+    2. Problem-solving skills: Practice solving a diverse range of coding problems from different domains. This will help you improve your problem-solving skills, learn different algorithms, and gain exposure to different types of questions that could be asked in interviews.
+  <br>  
+    3. Real-world application: Try to understand the practical applications of the concepts you learn. This will help you think critically and apply your knowledge to real-world scenarios.
+   <br> 
+    4. Mock interviews and coding challenges: Participate in mock interviews and coding challenges on platforms like LeetCode, HackerRank, or CodeSignal. These platforms often have a wide range of questions that can help you prepare for the interview process.
+<br>    
+    5. Company-specific preparation: Research the companies you are targeting and familiarize yourself with the types of questions they typically ask. Some companies have specific interview formats or may focus on particular areas of expertise, so tailor your preparation accordingly.
+    <br>
+    Rather than focusing solely on the number of questions, aim to develop a strong foundation in computer science fundamentals, problem-solving abilities, and effective communication during technical interviews. Remember, each interview is an opportunity to demonstrate your skills and knowledge, so it's important to be well-prepared and showcase your abilities in a confident and clear manner.</b></p>
+</div>
+<h4 onclick="toggleContent('content3')"><b> Whose Dsa Sheet Is More Prferable??</b></h4><hr>
+<div id="content3" class="content">
+  <p style="color: blue;font-size: medium;font-family: Arial, Helvetica, sans-serif;"> <b>There isn't a single "best" or "most preferable" DSA (Data Structures and Algorithms) cheat sheet that applies universally to everyone. Different individuals have different learning styles and preferences, so what works for one person may not work as well for another.
+<br>
+    However, I can provide you with some popular and widely-used DSA resources that many people find helpful:
+   <br> 
+    1. GeeksforGeeks: GeeksforGeeks is a popular platform that provides comprehensive explanations, tutorials, and code examples for various DSA topics. They also offer a DSA sheet that covers important concepts and commonly asked interview questions.
+   <br> 
+    2. LeetCode: LeetCode is a coding platform that offers a vast collection of coding problems, including many related to DSA. They have a discussion board where users share their approaches and solutions, which can be a valuable resource for learning.
+    <br>
+    3. Cracking the Coding Interview (CTCI) by Gayle Laakmann McDowell: This book is widely regarded as a valuable resource for preparing for technical interviews. It covers not only DSA topics but also system design and behavioral interview questions.
+    <br>
+    4. Competitive Programming by Steven Halim: This book is focused on competitive programming and covers a wide range of DSA topics. It includes explanations, code examples, and practice problems to help you improve your problem-solving skills.
+    <br>
+    5. Online coding platforms: Platforms like HackerRank, CodeSignal, and Codeforces offer coding challenges and practice problems that can help you improve your DSA skills and prepare for coding interviews.
+    <br>
+    Ultimately, it's important to choose a resource or DSA sheet that aligns with your learning style and helps you grasp the concepts effectively. You may also find it beneficial to combine multiple resources to gain a more comprehensive understanding of DSA topics </b> </p>
+</div>
+<h4 onclick="toggleContent('content4')"><b> Can We Surely Get Placement After Solving Complete Dsa Sheet ??</b></h4><hr>
+<div id="content4" class="content">
+  <p style="color: blue;font-size: medium;font-family: Arial, Helvetica, sans-serif;"><b>Solving a complete DSA (Data Structures and Algorithms) sheet or mastering DSA concepts is definitely a significant step towards improving your chances of getting a placement. However, it's important to note that the placement process involves multiple factors, and DSA is just one aspect of the overall evaluation.
+<br>
+    While a strong understanding of DSA is highly valued in technical interviews, there are other factors that can influence the final outcome, such as:
+   <br> 
+    1. Technical proficiency: Apart from DSA, companies may evaluate your knowledge and skills in other areas such as system design, object-oriented programming, databases, operating systems, etc. It's important to have a well-rounded technical skill set.
+   <br> 
+    2. Problem-solving ability: Solving DSA problems is an excellent way to improve your problem-solving skills. However, interviewers may present you with unique or unfamiliar problems during the interview. Being able to adapt your knowledge to solve new problems is crucial.
+    <br>
+    3. Communication and teamwork: Strong communication skills, both verbal and written, are valuable in the workplace. Companies often assess how well you can explain your thought process, collaborate with others, and work effectively in a team.
+    <br>
+    4. Behavioral and cultural fit: Companies often consider your attitude, work ethic, and alignment with their values and culture. Demonstrating professionalism, a positive attitude, and a willingness to learn can make a difference in the placement process.
+    <br>
+    5. Interview performance: The way you present yourself and perform in the interview, including your problem-solving approach, clarity of explanations, and ability to handle pressure, plays a vital role in the final decision.
+    <br>
+    Remember that a DSA sheet is a tool to help you review and reinforce your knowledge. It's essential to apply that knowledge by practicing coding problems and participating in mock interviews to improve your problem-solving skills and interview performance.
+   <br> 
+    Ultimately, success in getting a placement depends on a combination of factors, and a comprehensive preparation approach that includes DSA, as well as other technical and non-technical skills, will greatly increase your chances of securing a placement.</b></p>
+</div>
+<h4 onclick="toggleContent('content5')"><b> How To Solve A DSA Sheet Consistently??</b></h4><hr>
+<div id="content5" class="content">
+  <p style="color: blue;font-size: medium;font-family: Arial, Helvetica, sans-serif;"><b>To consistently solve a DSA (Data Structures and Algorithms) sheet, you can follow these steps:
+<br>
+    1. Understand the concepts: Begin by thoroughly understanding the DSA concepts covered in the sheet. Make sure you have a clear understanding of data structures, algorithms, and their applications.
+    <br>
+    2. Break down the topics: Divide the DSA sheet into manageable sections based on different topics or concepts. This will help you organize your learning and tackle each section systematically.
+    <br>
+    3. Review theory and examples: Read the theory and explanations provided in the sheet for each topic. Understand the underlying principles and algorithms. Pay attention to the time and space complexities of different operations.
+    <br>
+    4. Practice with simple problems: Start solving simple problems related to each topic. Begin with basic implementation exercises to reinforce your understanding and gain familiarity with the concepts.
+    <br>
+    5. Gradually increase difficulty: Once you are comfortable with the basics, move on to more complex problems. Challenge yourself with problems that require multiple concepts or algorithms to solve. Platforms like LeetCode, HackerRank, and GeeksforGeeks provide a variety of problems of different difficulty levels.
+    <br>
+    6. Analyze and learn from solutions: After solving a problem, analyze the solution provided in the sheet or compare it with other solutions. Understand different approaches, time and space complexities, and trade-offs. Learn from the explanations and code implementations provided.
+    <br>
+    7. Practice regularly: Consistent practice is key to mastering DSA. Set aside dedicated time each day or week to solve problems from the DSA sheet. This will help reinforce your understanding, improve your problem-solving skills, and build confidence.
+    <br>
+    8. Track progress: Keep a record of the problems you solve and track your progress. Note down any challenges or areas where you need more practice. This will help you identify weak points and focus on them.
+    <br>
+    9. Seek additional resources: If you find certain topics challenging or want more in-depth explanations, refer to other resources like textbooks, online tutorials, or video lectures. Supplementing your learning can provide different perspectives and approaches.
+    <br>
+    10. Review and revise: Regularly review the concepts and problems you have solved. Revisit the DSA sheet periodically to refresh your knowledge and ensure you retain what you've learned.
+    <br>
+    Remember, solving a DSA sheet is not a one-time task but an ongoing process. Consistent practice, problem-solving, and continuous learning are crucial for mastering DSA concepts and becoming proficient in solving related problems.</b></p>
+</div>
+<style>
+  /* CSS Styles for the Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    align-self:  flex-end;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+</style>
+</head>
+<footer>
+  <p>&copy; 2023  Code For Mode . All rights reserved.</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

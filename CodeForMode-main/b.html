@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Styling for the cart icon */
+    .cart-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #f1f1f1;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Styling for the cart content */
+    .cart-content {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: -100px;
+      width: 200px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease, right 0.3s ease;
+    }
+    
+    /* Show cart content on hover */
+    .cart-icon:hover .cart-content {
+      display: block;
+      right: 0;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-icon">
+    <!-- Add your cart icon here -->
+    <div class="cart-content">
+      <!-- Add your cart content here -->
+      <p>Cart is empty</p>
+    </div>
+  </div>
+</body>
+</html>

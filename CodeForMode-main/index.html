@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODE FOR MODE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Green and Black Minimal Code Search Logo.ico">
+  </head>
+  <style>
+    /* Styling for the dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 5px ;
+      padding: 6px;
+    }
+    
+    /* Styling for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Styling for the dropdown items */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Show dropdown content when hovering over the dropdown */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+  <style>
+    /* CSS for dark mode */
+    body.dark-mode {
+      background-color: #050d27;
+      color: #f52020;
+    }
+    
+    /* CSS for light mode */
+    body.light-mode {
+      background-color: #f5f5f5;
+      color: #1f0a0a;
+    }
+    
+    /* Styles for the switch */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+  </style>
+  <body>
+    <div class="container12">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.youtube.com/@codeformode">CODE FOR MODE</a>
+          <body class="light-mode">
+            <label class="switch">
+              <input type="checkbox" id="modeSwitch" onclick="toggleMode()">
+              <span class="slider"></span>
+            </label>
+            <script>
+              // JavaScript to toggle between dark and light mode
+              function toggleMode() {
+                var body = document.getElementsByTagName('body')[0];
+                body.classList.toggle('dark-mode');
+                body.classList.toggle('light-mode');
+              }
+            </script>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Coding Is Passion</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="tutorial.html">Tutorial Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT CODE FOR MODE</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="https://www.instagram.com/c_language_programming/">Instagram</a></li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100066711550165">Facebook</a></li>
+                    <li>
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/ram-mohan-dixit-817a6a224/">Linked In</a></li>
+                    <li>
+                    <li><a class="dropdown-item" href="https://chat.whatsapp.com/KksiCrqe9VN9MyNkCMYR5o">Join Our Whatsapp Group</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="https://t.me/code_for_mode">Telegram</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav><hr><br>
+      <div class="same1" style="background-color: coral;">
+              <ul class="nav justify-content-center">
+      <li class="nav-item">
+          <div class="dropdown">
+            <span> WEB DEVLOPMENT</span>
+            <div class="dropdown-content">
+              <a href="HTML.HTML">HTML</a>
+              <a href="CSS.HTML">CSS</a>
+              <a href="JAVASCRIPT.HTML">JS</a>
+              <a href="REACT.HTML">REACT</a>
+              <a href="MONGO DB .HTML">MONGO DB</a>
+              <a href="EXPRESS JS.HTML">EXPRESS JS</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> C/C++ </span>
+            <div class="dropdown-content">
+              <a href="INTRO.HTML">INTRODUCTION TO C/C++ PROGRAMING</a>
+              <a href="TOPIC.HTML">TOPIC WISE PRACTICE </a>
+              <a href="VIEW VIDEOS ">VIEW VIDEOS</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> PYTHON</span>
+            <div class="dropdown-content">
+              <a href="INTRO1.HTML">ROADMAP TO LEARN PYTHON</a>
+              <a href="INTRO1.HTML">INTRODUCTION TO PYTHON</a>
+              <a href="FRAMWORKS.HTML">DIFFERENT FRAMEWORKS</a>
+              <a href="LIBRARIES HMTL">PYTHON LIBRARIES</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> DATA STRUCTURE</span>
+            <div class="dropdown-content">
+              <a href="#">ROADMAP TO LEARN DATASTRUCTURE </a>
+              <a href="#">ARRAY</a>
+              <a href="#">LINKED LIST</a>
+              <a href="#">STRING</a>
+              <a href="#">STACK</a>
+              <a href="#">QUEUE</a>
+              <a href="#">TREE</a>
+              <a href="#">HASHING</a>
+              <a href="#">MAP</a>
+              <a href="#">ADVANCED STRUCTURE</a>
+            </div>
+          </div>
+
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> CS SUBJECTS</span>
+            <div class="dropdown-content">
+              <a href="#">THEORY OF AUTOMATA AND FORMAL LANGUAGE</a>
+              <a href="#">OPERATING SYSTEM</a>
+              <a href="#">DISCRETE MATHEMATICS</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> INTERVIEW PREPRATION</span>
+            <div class="dropdown-content">
+              <a href="#">TOPIC WISE PRACTISE</a>
+              <a href="#">COMPANY WISE PRACTISE</a>
+              <a href="#">TAGS WISE PRACTISE</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> SDE SHEET</span>
+            <div class="dropdown-content">
+              <a href="sd.html">VIEW SDE SHEETS</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <span> MACHINE LAEARNING</span>
+            <div class="dropdown-content">
+              <a href="#">ARTIFICIAL INTELLIGENCE </a>
+              <a href="#">MACHINE LEARNING</a>
+              <a href="#">DEEP LEARNING</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <div class="container2">
+      <div class="card" style="width: 18rem; display: flex;">
+        <img src="Green Neon Hacking Tutorials YouTube Thumbnail (6).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Web Devlopment </h5>
+          <p class="card-text"> "Take your coding skills to the next level with our C programming course! From basics to advanced concepts, learn the language that powers software development.Join us now and unleash the power of C programming!"</p>
+          <a href="#" class="btn btn-primary">Learn Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;display: flex;">
+        <img src="Purple Blue Modern Colorful Start Coding Youtube Thumbnail (6).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">C language Baics</h5>
+          <p class="card-text">"Discover the world of web development with our comprehensive course! Dive into HTML, CSS, and JavaScript to create stunning and interactive websites.  Enroll now and start crafting your own web masterpieces!"</p>
+          <a href="#" class="btn btn-primary">learn Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;display: flex;">
+        <img src="Green Neon Hacking Tutorials YouTube Thumbnail (6).png" class="card-img-top" alt="..."style="display: flex;">
+        <div class="card-body">
+          <h5 class="card-title">Python Programming</h5>
+          <p class="card-text">"Unlock your coding potential with our Python course! Learn the fundamentals and advanced concepts of Python programming . Join us today and embark on a journey to become a Python pro!"</p>
+         <a href="#" class="btn btn-primary">Learn Now</a>
+        </div>
+      </div>
+      <aside style="background-color: white; border-radius: 5PX;  margin-bottom: 40px; padding: 3px; padding-top: 4 px;">
+        <section id="subscription" class="widget"></section>
+        <h4 class="widget-title">Join Code For Mode</h4><br>
+        <div class="subscribe-form">
+          <form action="">
+            <label for="input-name">Name</label><br>
+            <input type="text" name="input-name" id="text"required><br>
+            <label for="email-name">E-Mail</label><br>
+            <input type="text" name="input-name" id="text"required><br>
+            <label for="contact-number">Contact No.</label><br>
+            <input type="number" name="contact-number" id="number" required><br>
+            <hr>
+            <button class="sub-btn" type="submit">SUBSCIRBE</button><BR></BR>
+          </form>
+        </div>
+      </aside>
+  </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="Blog pallete.html">Write a Blog</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"> 
+                        <p class="copyright">Code For Mode © 2022</p>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+                  </body>
+                  
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+  </body>
+</html>

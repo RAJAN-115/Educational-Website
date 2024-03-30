@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create and Save a List</title>
+</head>
+<body style="background-color: rgb(82, 185, 185);">
+  <h4 style="background-color: bisque;color: red; font: size 80px;font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Explore More Geek World </h4>
+  <style>
+    /* .slider{
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    } */
+
+    .slider img {
+      width: 500px;
+      height: 300px;
+      object-fit: hidden;
+      transition: transform 5s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <img style="size: 10%;" src="DreamShaper_v7_A_mysterious_hacker_in_a_dark_alley_illuminated_0.jpg" alt="Image 1">
+    <img src="DreamShaper_v7_A_hacker_in_a_dimly_lit_room_illuminated_by_the_0.jpg" alt="Image 2">
+    <img src=" DreamShaper_v7_A_mysterious_hacker_in_a_dark_alley_illuminated_2.jpg" alt="Image 3">
+  </div>
+
+  <script>
+    var slider = document.querySelector('.slider');
+    var images = document.querySelectorAll('.slider img');
+    var currentIndex = 0;
+
+    setInterval(function() {
+      images[currentIndex].style.transform = 'translateX(-100%)';
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.transform = 'translateX(0)';
+    }, 2000);
+  </script>
+</body>
+
+  <h1 style="background-color: aqua;text-align: center;">Create Your Own Dsa Sheet</h1>
+
+  <form id="listForm">
+    <input type="text" id="listItemInput">
+    <button type="button" onclick="addItem()">Add Item</button>
+  </form>
+
+  <ul id="listItems"></ul>
+
+  <button style="border: 3px solid black ; text-align: center;" type="button" onclick="saveList()">Save List</button>
+<br><hr>
+  <script>
+    function addItem() {
+      var input = document.getElementById("listItemInput");
+      var ul = document.getElementById("listItems");
+
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(input.value));
+      ul.appendChild(li);
+
+      input.value = "";
+    }
+
+    function saveList() {
+      var ul = document.getElementById("listItems");
+      var listItems = ul.getElementsByTagName("li");
+
+      var listData = [];
+      for (var i = 0; i < listItems.length; i++) {
+        listData.push(listItems[i].innerText);
+      }
+      console.log("List data:", listData);
+      alert("List saved successfully!");
+    }
+  </script>
+</body>
+</html>
